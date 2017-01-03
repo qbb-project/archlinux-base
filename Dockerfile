@@ -2,7 +2,7 @@ FROM qbbproject/archlinux-minimal
 
 MAINTAINER Christopher Hinz <hinz@theo-physik.uni-kiel.de>
 
-LABEL revision="2"
+LABEL revision="3"
 
 RUN pacman --noconfirm -Sy archlinux-keyring base-devel && pacman --noconfirm -Syu && pacman-db-upgrade && sudo paccache -k 0 -r -v
 
